@@ -45,6 +45,11 @@ function Landing() {
     { number: '<100ms', label: 'Prediction Time' },
   ]
 
+  const teamMembers = [
+    { name: 'Rahul Yadav', role: 'Full Stack Development & AI/ML' },
+    { name: 'Tanmay Choudhary', role: 'Backend Development & Data Science' },
+  ]
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white overflow-hidden">
       {/* Navigation */}
@@ -202,6 +207,31 @@ function Landing() {
         </div>
       </section>
 
+      {/* Team Section */}
+      <section className="max-w-7xl mx-auto px-6 py-20">
+        <div className="text-center mb-16">
+          <h3 className="text-3xl md:text-4xl font-bold mb-4">Meet Our Team</h3>
+          <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+            Expert developers and data scientists building the future of banking cybersecurity.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {teamMembers.map((member, idx) => (
+            <div
+              key={idx}
+              className="glass rounded-lg p-8 border border-blue-500/10 hover:border-blue-500/30 transition text-center"
+            >
+              <div className="w-20 h-20 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center mx-auto mb-4">
+                <Users size={40} className="text-white" />
+              </div>
+              <h4 className="text-xl font-bold mb-2">{member.name}</h4>
+              <p className="text-gray-400">{member.role}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="max-w-7xl mx-auto px-6 py-20">
         <div className="glass rounded-lg p-12 border border-blue-500/10 text-center">
@@ -241,8 +271,11 @@ function Landing() {
               </ul>
             </div>
           </div>
-          <div className="border-t border-blue-500/10 pt-8 text-center text-gray-500 text-sm">
-            <p>&copy; 2024 BankShield AI. All rights reserved. Built for cybersecurity hackathons.</p>
+          <div className="border-t border-blue-500/10 pt-8">
+            <div className="mb-6">
+              <p className="text-gray-400 text-sm mb-3">👥 <strong>Team:</strong> Rahul Yadav, Tanmay Choudhary</p>
+            </div>
+            <p className="text-center text-gray-500 text-sm">&copy; 2024 BankShield AI. All rights reserved. Built for cybersecurity hackathons.</p>
           </div>
         </div>
       </footer>
