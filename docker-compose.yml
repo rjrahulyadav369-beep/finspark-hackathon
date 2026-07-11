@@ -1,0 +1,43 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - FASTAPI_ENV=production
+      - DATABASE_URL=sqlite:///./bankshield.db
+      - SECRET_KEY=${SECRET_KEY:-your-secret-key-here}
+    volumes:
+      - ./backend:/app
+      - ./backend/bankshield.db:/app/bankshield.db
+    command: python app/main.py
+    networks:
+      - bankshield-network
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "5173:5173"
+    environment:
+      - VITE_API_BASE_URL=http://backend:8000
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    command: npm run dev
+    networks:
+      - bankshield-network
+    depends_on:
+      - backend
+
+networks:
+  bankshield-network:
+    driver: bridge
+
+volumes:
+  db_data:
