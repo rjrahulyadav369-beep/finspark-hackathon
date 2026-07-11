@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BankShield AI - AI-Powered Cyber Threat Correlation & Banking Risk Intelligence Platform">
+    <title>BankShield AI - Banking Cybersecurity Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">🛡️ BankShield AI</div>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#tech-stack">Tech Stack</a></li>
+                <li><a href="#installation">Installation</a></li>
+                <li><a href="#deployment">Deployment</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>🛡️ BankShield AI</h1>
+                <p class="hero-subtitle">AI-Powered Cyber Threat Correlation & Banking Risk Intelligence Platform</p>
+                <p class="hero-description">
+                    Enterprise-grade cybersecurity dashboard that intelligently correlates banking security events 
+                    and detects suspicious behavior before fraud happens.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#installation" class="btn btn-primary">Get Started</a>
+                    <a href="https://github.com/rjrahulyadav369-beep/finspark-hackathon" class="btn btn-secondary">View on GitHub</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="feature-card dark">
+                    <div class="card-header">Risk Score Analysis</div>
+                    <div class="risk-meter">
+                        <div class="risk-bar high"></div>
+                        <span>87/100 - HIGH RISK</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2>🚀 Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Intelligent Event Correlation</h3>
+                    <p>Correlates 10+ banking security event types in real-time</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3>ML-Powered Risk Scoring</h3>
+                    <p>Machine learning models for accurate threat detection</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h3>Beautiful Dashboard</h3>
+                    <p>Professional SOC interface with dark mode & glassmorphism</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📁</div>
+                    <h3>CSV Import</h3>
+                    <p>Bulk upload banking logs for analysis</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👤</div>
+                    <h3>User Profiles</h3>
+                    <p>Transaction history and behavioral risk assessment</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📄</div>
+                    <h3>PDF Reports</h3>
+                    <p>Generate compliance reports and analytics</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💬</div>
+                    <h3>AI Chat Assistant</h3>
+                    <p>Ask questions about flagged accounts and alerts</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔔</div>
+                    <h3>Alert Center</h3>
+                    <p>Manage and track security alerts efficiently</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Types Section -->
+    <section class="event-types">
+        <div class="container">
+            <h2>📊 Supported Event Types</h2>
+            <div class="event-grid">
+                <div class="event-item">
+                    <span class="event-num">1</span>
+                    <strong>Login</strong>
+                </div>
+                <div class="event-item">
+                    <span class="event-num">2</span>
+                    <strong>Failed Login</strong>
+                </div>
+                <div class="event-item">
+                    <span class="event-num">3</span>
+                    <strong>OTP Failure</strong>
+                </div>
+                <div class="event-item">
+                    <span class="event-num">4</span>
+                    <strong>Device Change</strong>
+                </div>
+                <div class="event-item">
+                    <span class="event-num">5</span>
+                    <strong>IP Address Change</strong>
+                </div>
+                <div class="event-item">
+                    <span class="event-num">6</span>
+                    <strong>Geo-location Change</strong>
+                </div>
+                <div class="event-item">
+                    <span class="event-num">7</span>
+                    <strong>Large Transaction</strong>
+                </div>
+                <div class="event-item">
+                    <span class="event-num">8</span>
+                    <strong>ATM Withdrawal</strong>
+                </div>
+                <div class="event-item">
+                    <span class="event-num">9</span>
+                    <strong>Password Reset</strong>
+                </div>
+                <div class="event-item">
+                    <span class="event-num">10</span>
+                    <strong>Beneficiary Added</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section id="tech-stack" class="tech-stack">
+        <div class="container">
+            <h2>🚀 Tech Stack</h2>
+            <div class="stack-grid">
+                <div class="stack-category">
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>React 18+</li>
+                        <li>Vite</li>
+                        <li>TypeScript</li>
+                        <li>Tailwind CSS</li>
+                        <li>Plotly & Chart.js</li>
+                    </ul>
+                </div>
+                <div class="stack-category">
+                    <h3>Backend</h3>
+                    <ul>
+                        <li>Python FastAPI</li>
+                        <li>SQLAlchemy</li>
+                        <li>Pydantic</li>
+                        <li>JWT Authentication</li>
+                        <li>CORS Protection</li>
+                    </ul>
+                </div>
+                <div class="stack-category">
+                    <h3>ML/AI</h3>
+                    <ul>
+                        <li>Scikit-learn</li>
+                        <li>Random Forest</li>
+                        <li>Isolation Forest</li>
+                        <li>Feature Engineering</li>
+                        <li>Model Evaluation</li>
+                    </ul>
+                </div>
+                <div class="stack-category">
+                    <h3>DevOps</h3>
+                    <ul>
+                        <li>Docker</li>
+                        <li>Docker Compose</li>
+                        <li>GitHub Ready</li>
+                        <li>SQLite Database</li>
+                        <li>Production Ready</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Risk Scoring Section -->
+    <section class="risk-scoring">
+        <div class="container">
+            <h2>🤖 AI Risk Scoring Engine</h2>
+            <div class="risk-formula">
+                <div class="formula-box">
+                    <code>Risk Score = (device_risk × 0.2 + location_risk × 0.2 + transaction_risk × 0.25 + velocity_risk × 0.2 + auth_risk × 0.15)</code>
+                </div>
+            </div>
+            <div class="risk-levels">
+                <div class="level safe">0-20: Safe</div>
+                <div class="level low">21-40: Low Risk</div>
+                <div class="level medium">41-60: Medium Risk</div>
+                <div class="level high">61-80: High Risk</div>
+                <div class="level critical">81-100: Critical</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation Section -->
+    <section id="installation" class="installation">
+        <div class="container">
+            <h2>🛠️ Installation & Setup</h2>
+            
+            <div class="setup-step">
+                <h3>Step 1: Clone Repository</h3>
+                <pre><code>git clone https://github.com/rjrahulyadav369-beep/finspark-hackathon.git
+cd finspark-hackathon</code></pre>
+            </div>
+
+            <div class="setup-step">
+                <h3>Step 2: Setup Backend</h3>
+                <pre><code>cd backend
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+pip install -r requirements.txt
+python app/main.py</code></pre>
+                <p><strong>Backend runs on:</strong> http://localhost:8000</p>
+                <p><strong>API Docs:</strong> http://localhost:8000/docs</p>
+            </div>
+
+            <div class="setup-step">
+                <h3>Step 3: Setup Frontend</h3>
+                <pre><code>cd frontend
+npm install
+npm run dev</code></pre>
+                <p><strong>Frontend runs on:</strong> http://localhost:5173</p>
+            </div>
+
+            <div class="setup-step quick-start">
+                <h3>Quick Start with Docker</h3>
+                <pre><code>docker-compose up --build</code></pre>
+                <p>This will start both frontend and backend services automatically!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- API Endpoints Section -->
+    <section class="api-endpoints">
+        <div class="container">
+            <h2>🔑 Key API Endpoints</h2>
+            <table class="endpoints-table">
+                <thead>
+                    <tr>
+                        <th>Endpoint</th>
+                        <th>Method</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>/auth/login</td>
+                        <td>POST</td>
+                        <td>User authentication</td>
+                    </tr>
+                    <tr>
+                        <td>/auth/register</td>
+                        <td>POST</td>
+                        <td>User registration</td>
+                    </tr>
+                    <tr>
+                        <td>/api/events</td>
+                        <td>GET</td>
+                        <td>Fetch all events with filters</td>
+                    </tr>
+                    <tr>
+                        <td>/api/predict</td>
+                        <td>POST</td>
+                        <td>Get risk prediction for event</td>
+                    </tr>
+                    <tr>
+                        <td>/api/users/{id}</td>
+                        <td>GET</td>
+                        <td>User profile & history</td>
+                    </tr>
+                    <tr>
+                        <td>/api/dashboard</td>
+                        <td>GET</td>
+                        <td>Dashboard statistics</td>
+                    </tr>
+                    <tr>
+                        <td>/api/alerts</td>
+                        <td>GET</td>
+                        <td>Fetch security alerts</td>
+                    </tr>
+                    <tr>
+                        <td>/api/chat</td>
+                        <td>POST</td>
+                        <td>AI chat assistant</td>
+                    </tr>
+                    <tr>
+                        <td>/api/reports/pdf</td>
+                        <td>POST</td>
+                        <td>Generate PDF report</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Deployment Section -->
+    <section id="deployment" class="deployment">
+        <div class="container">
+            <h2>🚀 Deployment Options</h2>
+            <div class="deployment-grid">
+                <div class="deployment-card">
+                    <h3>Docker Deployment</h3>
+                    <p>Perfect for local development and production environments</p>
+                    <pre><code>docker-compose up -d</code></pre>
+                </div>
+                <div class="deployment-card">
+                    <h3>GitHub Pages (Frontend)</h3>
+                    <p>Deploy static frontend to GitHub Pages</p>
+                    <pre><code>cd frontend
+npm run build
+# Deploy dist/ folder to GitHub Pages</code></pre>
+                </div>
+                <div class="deployment-card">
+                    <h3>Cloud Platforms</h3>
+                    <p>Backend deployment options:</p>
+                    <ul style="text-align: left; margin-top: 10px;">
+                        <li>Heroku</li>
+                        <li>Railway</li>
+                        <li>Render</li>
+                        <li>AWS EC2</li>
+                        <li>Google Cloud Run</li>
+                        <li>Azure App Service</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Features Section -->
+    <section class="security-features">
+        <div class="container">
+            <h2>🔐 Security Features</h2>
+            <div class="security-grid">
+                <div class="security-item">✅ JWT-based authentication</div>
+                <div class="security-item">✅ Password hashing with bcrypt</div>
+                <div class="security-item">✅ CORS protection</div>
+                <div class="security-item">✅ Input validation & sanitization</div>
+                <div class="security-item">✅ SQL injection prevention</div>
+                <div class="security-item">✅ Rate limiting on API endpoints</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>👨‍💻 About</h2>
+            <p>BankShield AI is an enterprise-grade cybersecurity platform designed for national-level hackathons.</p>
+            <p><strong>Author:</strong> Raj Rahul Yadav</p>
+            <p><strong>License:</strong> MIT License</p>
+            <div class="contact-links">
+                <a href="https://github.com/rjrahulyadav369-beep/finspark-hackathon" class="contact-link">🔗 GitHub Repository</a>
+                <a href="https://github.com/rjrahulyadav369-beep" class="contact-link">👤 GitHub Profile</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Built with ❤️ for Banking Security | © 2024 BankShield AI</p>
+            <p>MIT License - Production Grade Code Quality</p>
+        </div>
+    </footer>
+</body>
+</html>
