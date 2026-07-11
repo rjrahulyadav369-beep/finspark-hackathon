@@ -245,9 +245,11 @@ npm run build
 
 MIT License - See LICENSE file
 
-## 👨‍💻 Author
+## 👨‍💻 Authors & Team
 
-Raj Rahul Yadav
+**Team Members:**
+- **Rahul Yadav** - Full Stack Development & AI/ML
+- **Tanmay Choudhary** - Backend Development & Data Science
 
 ## 🏆 Hackathon Ready
 
