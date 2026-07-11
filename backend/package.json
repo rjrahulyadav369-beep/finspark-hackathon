@@ -1,0 +1,25 @@
+{
+  "name": "bankshield-ai",
+  "version": "1.0.0",
+  "description": "BankShield AI - AI-Powered Cyber Threat Correlation Platform",
+  "main": "app/main.py",
+  "scripts": {
+    "start": "python app/main.py",
+    "dev": "python -m uvicorn app.main:app --reload",
+    "test": "pytest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rjrahulyadav369-beep/finspark-hackathon.git"
+  },
+  "keywords": [
+    "banking",
+    "cybersecurity",
+    "ai",
+    "threat-detection",
+    "machine-learning",
+    "risk-assessment"
+  ],
+  "author": "Raj Rahul Yadav",
+  "license": "MIT"
+}
